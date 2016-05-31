@@ -3,9 +3,12 @@
     margin: 5px;
 }
 
+#en, #bg {
+    cursor: pointer;
+}
+
 .languageBar {
     display: inline-block;
-    cursor: pointer;
 }
 
 .langButtons {
