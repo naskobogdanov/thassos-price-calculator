@@ -42,9 +42,9 @@ function calculatePrice() {
         $ ("#result").css('display', 'block');
         $ ("#error").css('display', 'none');
         if (isEnglish) {
-            $('#pricePerPerson').html("Price per person: " + fullPricePerPerson + " lv. (€ "+ fullPricePerPersonEuro +")");
+            english();
         } else {
-            $('#pricePerPerson').html("Цена за човек: " + fullPricePerPerson + " лв. (€ "+ fullPricePerPersonEuro +")");
+            bulgarian();
         }
     }
 }
