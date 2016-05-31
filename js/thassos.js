@@ -41,7 +41,7 @@ function calculatePrice() {
     } else {
         $ ("#result").css('display', 'block');
         $ ("#error").css('display', 'none');
-        if (isEnglish) {
+        if (localStorage.getItem('isEnglish') === 'true') {
             english();
         } else {
             bulgarian();

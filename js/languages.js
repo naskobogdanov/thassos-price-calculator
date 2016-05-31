@@ -2,8 +2,6 @@ if (!localStorage.getItem('isEnglish')) {
     localStorage.setItem('isEnglish','true');
 }
 
-var isEnglish = localStorage.getItem('isEnglish');
-
 if (localStorage.getItem('isEnglish') === 'true') {
     english();
 } else {
@@ -14,7 +12,6 @@ $(document).ready(function () {
     $('#en').click(english);
     $('#bg').click(bulgarian);
 });
-
 
 function english() {
     $('#headerTitle').text("Thassos Calc");
@@ -31,7 +28,6 @@ function english() {
     $('#pricePerPerson').html("Price per person: " + fullPricePerPerson + " lv. (€ "+ fullPricePerPersonEuro +")");
     localStorage.setItem('isEnglish','true');
 }
-
 
 function bulgarian() {
     $('#headerTitle').text("Елка \"Tасос\"");
