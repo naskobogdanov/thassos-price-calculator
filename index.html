@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Thasos Price Calculation Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/style.css" />
+
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+<div class="page-header" id="topHeader">
+    <h2 id="headerTitle" class="languageBar">Thassos Calc</h2>
+    <span class="langButtons">
+        <img src="images/en.gif" id="en" class="languageBar">
+        <img src="images/bg.png" id="bg" class="languageBar">
+    </span>
+</div>
+
+<div class="container">
+
+
+    <div class="row">
+            <div class="col-lg-6">
+                <div class="well well-sm"><strong><span class="glyphicon glyphicon-asterisk"></span><span id="required">Required Field</span></strong></div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <input type="number" class="form-control" name="Passengers" id="Passengers" placeholder="Enter Car Passengers Count" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="Consumption" id="Consumption" placeholder="Fuel consumption per 100km" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="FuelPrice" id="FuelPrice" placeholder="Enter Fuel Price in BGN" required>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="startingPoint" id="startingPointTitle">Starting point:</label>
+                    <select class="form-control" id="startingPoint">
+                        <option id="sofia">Sofia</option>
+                        <option id="velingrad">Velingrad</option>
+                    </select>
+                </div>
+                <button id="calculateButton" class="btn btn-info pull-right" onclick="calculatePrice()" >Calculate</button>
+                </br></br></br>
+            </div>
+        <div class="col-lg-5 col-md-push-1">
+            <div class="col-md-12" id="output">
+                <div class="alert alert-danger" id="error">
+                    <span class="glyphicon glyphicon-remove"></span>
+                    <strong id="errorMessage">
+                        Error! Please check all input values.
+                    </strong>
+                </div>
+                <div id="result">
+                    <p>
+                        <strong id="approximatePrice">
+                            This is an approximate price that includes travel costs and stay for three nights at camping Pefkari.
+                        </strong></br>
+                    </p>
+                    <div class="alert alert-success">
+                        <strong>
+                            <span class="glyphicon glyphicon-ok"></span>
+                            <span id="pricePerPerson"></span>
+                        </strong>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+<script type="text/javascript" src="js/thassos.js"></script>
+<script src="js/languages.js"></script>
+</body>
+</html>

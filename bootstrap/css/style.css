@@ -1,0 +1,29 @@
+#topHeader {
+    text-align: left;
+    margin: 5px;
+}
+
+.languageBar {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.langButtons {
+    margin-bottom: 10px;
+    float: right !important;
+
+}
+
+#error {
+    display: none;
+}
+
+#result {
+    display: none;
+}
+
+@media all and (max-width: 1199px) {
+    #topHeader {
+        text-align: center;
+    }
+}
