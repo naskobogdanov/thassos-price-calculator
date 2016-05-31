@@ -18,7 +18,7 @@ function calculatePrice() {
         perTent = perTent * 2
     }
 
-    if ($("#startingPoint").val() === "Velingrad") {
+    if ($("#startingPoint").val() === "Velingrad" || $("#startingPoint").val() === "Велинград") {
         distance = distanceFromVelingrad;
     }
 
